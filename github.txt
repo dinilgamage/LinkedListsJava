@@ -1,0 +1,35 @@
+right click on project folder and open git cli
+make a repo on github
+git config --global user.name "name"
+git config --global user.email "email"
+clone repo by using "git clone url ." ("." means clone the githib repo to current woroking directory, aka the project folder u right clicked on)
+ls -la (check the files inside the directory)
+git remote -v (view the remote repo)
+git branch -a (view all branches)
+git diff (check changes made before staging)
+git add -A/file name (to stage)(-A stages all files)
+git commit -m "message" commit the staged changes to the git repo 
+git pull origin main (check if there were any changes made in the remote branch while you were making changes to local file)(this will tell you if any conflicts are present if no conflicts present it will merge)
+git push origin main (push the changes to remote repo)
+git branch branchname (create branch)
+git branch (list the branches)
+git checkout branchname (switch to branchname)
+git push -u origin branchname (push the changes to branchname in remote repo, the "-u" makes the connection between the local branchname and remote branchname so the next time u push or pull to branchname only type "git push or git pull")
+git branch --merged (check the files that are merged, if empty they are not merged)\
+git merge nameOfBranchUwantTOMerge (then push the changes to origin main)
+git branch -d branchname (delete branch locally)
+git push origin --delete branchname (delete branch remotely)
+git reset --hard <commitID> then git push --force (how to revert back inot an older version)
+git restore --staged filename or directory
+
+clone a local repo into git 
+right click inside the project folder
+git init
+git add .
+git commit -m "Initial commit"
+git branch -m <old-branch-name> <new-branch-name> (rename branch to main)
+git remote add origin <remote-repository-url>
+git push -u origin master
+
+DESKTOP-D047O50\SQLEXPRESS
+
